@@ -18,26 +18,43 @@ Spec(
     },
     kerning: (
         left: {
-            // things that have an 'o'-shaped right hand side
+            // small things that have an 'o'-shaped right hand side
             "o": "abcopr",
-            // things that have a 'u'-shaped right hand side
+            // small things that have a 'u'-shaped right hand side
             "u": "guswy",
             // T admits a lot of tucking
             "T": "T",
+            // things that have a protruding flick at the bottom right
+            "l": "lt"
+            // things that have a protruding flick at the top right
+            "f": "f"
         },
         right: {
-            // things that have an 'o'-shaped left hand side
+            // small things that have an 'o'-shaped left hand side
             "o": "acdegoq",
-            // things that have a 'u'-shaped left hand side
+            // small things that have a 'u'-shaped left hand side
             "u": "uy",
             // T admits a lot of tucking
             "T": "T",
+            // 'l' has a protruding flick at the top left
+            "l": "l"
         },
         pairs: {
             ("o", "T"): -1,
             ("u", "T"): -1,
             ("T", "o"): -1,
             ("T", "u"): -1,
+
+            // Tucking things closer to 'l' that nest below on the left or above on the right.
+            ("l", "l"): 0,
+            ("l", "o"): 0,
+            ("l", "u"): 0,
+            ("o", "l"): 0,
+            ("u", "l"): 0,
+
+            // Pulling small letters under flicks
+            ("f", "o"): 0,
+            ("f", "u"): 0,
         }
     )
 )
