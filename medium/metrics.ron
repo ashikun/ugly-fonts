@@ -19,7 +19,7 @@ Spec(
     kerning: (
         left: {
             // large things that just brush against small 'o' shapes
-            "P": "PV"
+            "P": "PV",
             // small things that have an 'o'-shaped right hand side
             "o": "abcopr",
             // small things that have a 'u'-shaped right hand side
