@@ -15,5 +15,29 @@ Spec(
         "l": 4,
         "t": 5,
         "JT": 6,
-    }
+    },
+    kerning: (
+        left: {
+            // things that have an 'o'-shaped right hand side
+            "o": "abcopr",
+            // things that have a 'u'-shaped right hand side
+            "u": "guswy",
+            // T admits a lot of tucking
+            "T": "T",
+        },
+        right: {
+            // things that have an 'o'-shaped left hand side
+            "o": "acdegoq",
+            // things that have a 'u'-shaped left hand side
+            "u": "uy",
+            // T admits a lot of tucking
+            "T": "T",
+        },
+        pairs: {
+            ("o", "T"): -1,
+            ("u", "T"): -1,
+            ("T", "o"): -1,
+            ("T", "u"): -1,
+        }
+    )
 )
