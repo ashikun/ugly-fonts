@@ -25,9 +25,9 @@ Spec(
             // T admits a lot of tucking
             "T": "T",
             // things that have a protruding flick at the bottom right
-            "l": "lt"
+            "l": "lt",
             // things that have a protruding flick at the top right
-            "f": "f"
+            "f": "f",
         },
         right: {
             // small things that have an 'o'-shaped left hand side
@@ -37,7 +37,7 @@ Spec(
             // T admits a lot of tucking
             "T": "T",
             // 'l' has a protruding flick at the top left
-            "l": "l"
+            "l": "l",
         },
         pairs: {
             ("o", "T"): -1,
