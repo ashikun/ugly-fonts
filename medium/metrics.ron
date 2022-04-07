@@ -18,6 +18,8 @@ Spec(
     },
     kerning: (
         left: {
+            // large things that just brush against small 'o' shapes
+            "P": "PV"
             // small things that have an 'o'-shaped right hand side
             "o": "abcopr",
             // small things that have a 'u'-shaped right hand side
@@ -25,7 +27,7 @@ Spec(
             // T admits a lot of tucking
             "T": "T",
             // things that have a protruding flick at the bottom right
-            "l": "lt",
+            "l": "klt",
             // things that have a protruding flick at the top right
             "f": "f",
         },
@@ -40,10 +42,15 @@ Spec(
             "l": "l",
         },
         pairs: {
+            // nestle things underneath T
             ("o", "T"): -1,
             ("u", "T"): -1,
             ("T", "o"): -1,
             ("T", "u"): -1,
+
+            // Tighter caps-small tuck-under
+            ("P", "o"): 0,
+            ("P", "u"): 0,
 
             // Tucking things closer to 'l' that nest below on the left or above on the right.
             ("l", "l"): 0,
