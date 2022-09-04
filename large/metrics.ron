@@ -11,11 +11,12 @@ Spec(
         ";": 3,
         "=": 8,
         "Ii": 2,
+        "f": 8,
         "l": 6,
-        "v": 10,
+        "jt": 7,
         "z": 11,
-        // 'o' derived lowercase letters
-        "abcdo": 10,
+        // Most lowercase letters are this width
+        "abcdeghknopqrsuvy": 10,
     },
     kerning: (
         left: {
