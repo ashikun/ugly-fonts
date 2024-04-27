@@ -6,7 +6,7 @@ Spec(
         "<>": 6,
         "-=": 5,
         "'": 3,
-        ":": 2,
+        ".:": 2,
         ";": 3,
         "I": 2,
         "f": 5,
@@ -36,6 +36,8 @@ Spec(
             "o": "acdegoq",
             // small things that have a 'u'-shaped left hand side
             "u": "uy",
+            // very small things
+            ".": ".",
             // T admits a lot of tucking
             "T": "T",
             // 'l' has a protruding flick at the top left
@@ -51,6 +53,7 @@ Spec(
             // Tighter caps-small tuck-under
             ("P", "o"): 0,
             ("P", "u"): 0,
+            ("P", "."): 0,
 
             // Tucking things closer to 'l' that nest below on the left or above on the right.
             ("l", "l"): 0,
